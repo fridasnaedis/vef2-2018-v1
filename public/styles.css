@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Roboto:700');
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +6,91 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Lora', 'Georgia', serif;
+  color: #333;
+  font-size: 16px;
+  background-color: #eee;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+h1, h2 {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: bold;
+  padding: 15px;
+}
+
+p {
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list_item {
+  width: 100%;
+  padding: 15px;
+}
+
+.list_image {
+  height: 75%;
+}
+
+.list_text {
+  height: 25%;
+  padding-top: 15px;
+}
+
+.list_heading {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header {
+  background-image: url('../static/header.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #eee;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 9em;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.return {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.error_message {
+  font-size: 32px;
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .list_item {
+    width: 50%;
+  }
 }

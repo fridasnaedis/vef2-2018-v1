@@ -3,14 +3,26 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "eslint": "eslint *.js **/*.js"
+    "eslint": "eslint *.js **/*.js",
+    "dev": "\"gulp default\""
   },
   "devDependencies": {
-    "eslint": "^4.16.0",
+    "browser-sync": "^2.23.5",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^3.8.7",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-sass": "^3.1.0"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "dateformat": "^3.0.2",
+    "ejs": "^2.5.7",
+    "eslint": "^4.17.0",
+    "express": "^4.16.2",
+    "front-matter": "^2.3.0",
+    "frontmatter": "0.0.3",
+    "markdown": "^0.5.0",
+    "node": "^9.4.0",
+    "path": "^0.12.7"
   }
 }

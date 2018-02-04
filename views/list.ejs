@@ -1,0 +1,23 @@
+<%- include('header') -%>
+  <div class="list">
+    <% sortedContent.forEach((articleInfo) => { %>
+      <a class="list_item" href="<%- `./${articleInfo.attributes.slug}` %>">
+        <div class="list_image">
+          <% if(articleInfo.attributes.image){ %>
+            <img src="<%- articleInfo.attributes.image %>" />
+            <%    }
+        else { %>
+              <img src="./img/fallback.jpg" />
+              <%    } %>
+        </div>
+        <div class="list_text">
+          <div class="list_heading">
+            <%- articleInfo.attributes.title %>
+          </div>
+          <div>
+            <%- articleInfo.attributes.date %>
+          </div>
+        </div>
+      </a>
+      <% }) %>
+  </div>
